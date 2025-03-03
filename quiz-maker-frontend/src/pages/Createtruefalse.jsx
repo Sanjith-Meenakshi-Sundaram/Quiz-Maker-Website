@@ -53,7 +53,7 @@ const CreateTrueFalse = () => {
         };
 
         try {
-            const response = await axios.post("http://localhost:5000/api/quiz/create", quizData);
+            const response = await axios.post("https://quiz-maker-website.onrender.com/api/quiz/create", quizData);
             console.log("Quiz created:", response.data);
             alert("Quiz created successfully!");
             navigate("/dashboard");

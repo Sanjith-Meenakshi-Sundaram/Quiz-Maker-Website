@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://quiz-maker-website.onrender.com/api",
 });
 
 // Function to register a new user (Signup)

@@ -8,7 +8,7 @@ const AvailableQuizzes = () => {
     useEffect(() => {
         const fetchQuizzes = async () => {
             try {
-                const response = await fetch("http://localhost:5000/api/quiz/all");
+                const response = await fetch("https://quiz-maker-website.onrender.com/api/quiz/all");
                 const data = await response.json();
                 setQuizzes(data);
             } catch (error) {
@@ -21,7 +21,7 @@ const AvailableQuizzes = () => {
     // Function to delete a quiz
     const handleDelete = async (quizId) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/quiz/delete/${quizId}`, {
+            const response = await fetch(`https://quiz-maker-website.onrender.com/api/quiz/delete/${quizId}`, {
                 method: "DELETE",
             });
 

@@ -12,7 +12,7 @@ const EditTrueFalse = () => {
     useEffect(() => {
         const fetchQuiz = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/quiz/${id}`);
+                const response = await axios.get(`https://quiz-maker-website.onrender.com/api/quiz/${id}`);
                 const quiz = response.data;
                 setTitle(quiz.title);
                 setQuestion(quiz.questions[0].question);
@@ -28,7 +28,7 @@ const EditTrueFalse = () => {
     const handleUpdate = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:5000/api/quiz/update/${id}`, {
+            await axios.put(`https://quiz-maker-website.onrender.com/api/quiz/update/${id}`, {
                 title,
                 type: "truefalse",
                 questions: [{ question, correctAnswer }],

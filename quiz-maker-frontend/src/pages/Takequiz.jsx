@@ -16,7 +16,7 @@ const TakeQuiz = () => {
     const fetchQuiz = useCallback(async () => {
         try {
             setLoading(true);
-            const response = await fetch(`http://localhost:5000/api/quiz/quiz/${id}`);
+            const response = await fetch(`https://quiz-maker-website.onrender.com/api/quiz/quiz/${id}`);
             if (!response.ok) throw new Error("Failed to fetch quiz.");
             const data = await response.json();
 

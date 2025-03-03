@@ -13,7 +13,7 @@ const EditMCQ = () => {
     useEffect(() => {
         const fetchQuiz = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/quiz/${id}`);
+                const response = await axios.get(`https://quiz-maker-website.onrender.com/api/quiz/${id}`);
                 const quiz = response.data;
 
                 setTitle(quiz.title);
@@ -37,7 +37,7 @@ const EditMCQ = () => {
     const handleUpdate = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:5000/api/quiz/update/${id}`, {
+            await axios.put(`https://quiz-maker-website.onrender.com/api/quiz/update/${id}`, {
                 title,
                 type: "mcq",
                 questions: [{ question, options, correctAnswer }],
