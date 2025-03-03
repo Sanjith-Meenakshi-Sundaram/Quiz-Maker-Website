@@ -3,8 +3,8 @@
 Quiz Maker is an interactive web application that allows users to create, share, and take quizzes effortlessly. Whether you're a teacher designing a test for students, a recruiter evaluating candidates, or just someone who enjoys fun quizzes, this platform offers a seamless experience.
 
 By providing an intuitive interface for both quiz creators and participants, the app ensures engaging and efficient knowledge assessment.
-
 Try: https://quiz-maker-website.vercel.app
+
 ---
 
 ## Why Choose Quiz Maker? 🤷‍♂️
