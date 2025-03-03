@@ -16,7 +16,7 @@ app.use(express.json());
 // ✅ Setup CORS properly
 app.use(
   cors({
-    origin: "http://localhost:5173", // ✅ Allow frontend to access backend
+    origin: ["http://localhost:5173", "https://quiz-maker-website.vercel.app"], // ✅ Allow both local and deployed frontend
     credentials: true, // ✅ Allow cookies (if needed)
     methods: ["GET", "POST", "PUT", "DELETE"], // ✅ Allow these HTTP methods
   })
